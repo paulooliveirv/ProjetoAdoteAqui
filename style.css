@@ -153,6 +153,12 @@ span{
     font-family:  'Anton', sans-serif;
 }
 
+footer{
+    background-color: #EBB32B;
+    width: 100%;
+    text-align: center;
+}
+
 /* Hover */
 
 a:hover{
