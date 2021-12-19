@@ -4,6 +4,7 @@
 body{
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0px;
 }
@@ -48,10 +49,6 @@ a{
     color: white;
 }
 
-a:hover{
-    color: black;
-    transition: 1.8s;
-}
 
 .main-box{
     display: flex;
@@ -70,21 +67,52 @@ a:hover{
 }
 
 .p-main{
-    padding-bottom: 0%;
+    margin-bottom: 0px;
     margin-left: 5%;
     font-size: 40px;
     font-family: 'Anton', sans-serif;
     color: white;
 }
 .p-main-2{
-    margin-left: 13%;
+    margin-left: 20%;
     font-size: 25px;
 }
 
 .dog-principal{
     height: 500px;
-    width: 33%;
+    width: 30%;
+    aspect-ratio: 1/2;
+}
 
+a:hover{
+    color: black;
+    transition: 1.8s;
+}
+h2{
+    display: none;
+}
+
+@media (max-width: 1980px){
+    header{
+        padding-top: 2%;
+    }
+    ul{
+        padding-left: 12%;
+    }
+    .main-box{
+        margin-top: 2%;
+        height: 500px;
+    }
+    .dog-principal{
+        height: 580px;
+        width: 27%;
+    }
+    .p-div-main{
+        margin-left: 10%;
+    }
+    .p-main{
+        font-size: 50px;
+    }
 }
 
 @media (max-width: 1370px){
