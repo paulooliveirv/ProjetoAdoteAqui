@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body{
-    background-image: url(imagens/background-adocao.png);
+    background-image: url(background-adocao.png);
     background-color: white;
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +36,7 @@ ul{
     text-transform: uppercase;
     margin-top: 6%;
     width: 85%;
-    margin-left: 20%;
+    margin-left: 30%;
     justify-content: flex-start;
 }
 
@@ -166,7 +166,7 @@ footer{
 
 a:hover{
     color: rgb(0, 18, 177);
-    transition: 1.8s;
+    transition: 1s;
 }
 .col-pet:hover{
     transform: scale(1.1);
@@ -192,7 +192,7 @@ button:hover{
         height: 500px;
     }
     .dog-principal{
-        height: 620px;
+        height: 650px;
         width: 30%;
     }
     .p-div-main{
