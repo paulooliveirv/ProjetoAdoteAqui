@@ -41,14 +41,15 @@ ul{
 }
 
 li{
-    font-size: 25px;
+    font-weight: bolder;
+    font-size: 30px;
     padding-right: 30px;
-    font-family:cursive;
+    font-family: 'Anton', sans-serif;
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .main-box{
@@ -164,7 +165,7 @@ footer{
 /* Hover */
 
 a:hover{
-    color: black;
+    color: rgb(0, 18, 177);
     transition: 1.8s;
 }
 .col-pet:hover{
