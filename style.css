@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-
 body{
     background-image: url(imagens/background-adocao.png);
     background-color: white;
@@ -9,6 +8,8 @@ body{
     justify-content: center;
     margin: 0px;
 }
+
+
 
 .divisao-principal{
     background-color: #EBB32B;
@@ -50,7 +51,6 @@ a{
     color: white;
 }
 
-
 .main-box{
     display: flex;
     height: 348px;
@@ -79,9 +79,25 @@ a{
     font-size: 25px;
 }
 
+.btn-ajuda{
+    color:black;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 40%;
+    margin-left: 9rem;
+    border-style: none;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 .dog-principal{
     height: 500px;
-    width: 30%;
+    width: 25%;
 }
 
 .disponiveis{
@@ -90,10 +106,13 @@ a{
     font-family:  'Anton', sans-serif;
     font-size: 2rem;
 }
+h2{
+    padding-left: 5rem;
+}
 .pets-img{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
 }
 .col-pet{
     width: 18%;
@@ -130,6 +149,11 @@ span{
     font-size: 2rem;
     width:  60%;
 }
+.footer{
+    font-family:  'Anton', sans-serif;
+}
+
+/* Hover */
 
 a:hover{
     color: black;
@@ -140,12 +164,19 @@ a:hover{
     transition: 0.5s;
 }
 
+button:hover{
+   color :#EBB32B;
+   transform: scale(1.1);
+}
+
+/* MEDIA QUERIES */
+
 @media (max-width: 1980px){
     header{
         padding-top: 2%;
     }
     ul{
-        padding-left: 12%;
+        padding-left: 20%;
     }
     .main-box{
         margin-top: 2%;
@@ -161,6 +192,13 @@ a:hover{
     .p-main{
         font-size: 50px;
     }
+    .video{
+        padding-right: 2rem;
+    }
+    .col-pet{
+        height: 12rem;
+    }
+    
 }
 
 @media (max-width: 1370px){
@@ -171,11 +209,27 @@ a:hover{
         margin-left: 8%;
         margin-top: 8%;
     }
+    .dog-principal{
+        height: 550px;
+        width: 35%;
+    }
+    .col-pet{
+        height: 12rem;
+    }
+    .video{
+        padding-right: 4rem;
+    }
+    .p-main{
+        font-size: 35px;
+    }
+    .p-main-2{
+        margin: 25px;
+    }
 }
 
 @media (max-width: 1160px){
     .logo-topo{
-        margin-left: 2%;
+        margin-left: 12%;
     }
     ul{
         margin-left: 2%;
@@ -183,37 +237,126 @@ a:hover{
     li{
         padding-right: 2%;
     }
-}
-
-@media (max-width: 950px){
-    li{
-        font-size: 18px;
+    .btn-ajuda{
+        font-size: 20px;
+    }
+    .dog-principal{
+        height: 550px;
+        width: 35%;
+    }
+    p{
+        text-align: center;
+    }
+    .p-main-2{
+        font-size: 30px;
+    }
+    .col-pet{
+        height: 10rem;
+    }
+    .text{
+        font-size: 25px;
     }
 }
 
-@media (max-width: 690px){
+@media (max-width: 950px){
+    
+    .logo-topo{
+        width: 12rem;
+    }
+    li{
+        padding-top: 15px;
+        font-size: 15px;
+    }
+    .btn-ajuda{
+        font-size: 20px;
+    }
+    .dog-principal{
+        height: 560px;
+        width: 45%;
+        margin-right: 10rem;
+    }
+    .p-main{
+        font-size: 30px;
+        text-align: left;
+        margin-left: 0px;
+    }
+    .btn-ajuda{
+        margin-left: 4rem;
+        width: 10rem;
+    }
+    .video{
+        margin-left: 10rem;
+    }
+    .col-pet{
+        height: 8rem;
+        width: 7rem;
+
+    }
+    .text{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 700px){
     header{
         display: flex;
         flex-wrap: wrap;
     }
-    .divisao-principal{
-        width: 100%;
-    }
-    .logo-topo{
-        width: 100%;
-    }
-    
     ul{
         display: flex;
         flex-direction: column;
         text-align: center;
         margin-top: 15px;
-    }
+        padding-left: 1rem;
+        }
     
-    li{
+        li{
         padding-top: 30px;
         width: 100%;
         font-size: 30px;
         text-align: center;
+        }
+    .divisao-principal{
+        width: 100%;
+    }
+    .logo-topo{
+        display: none;
+    }
+
+    .dog-principal{
+        height: 400px;
+        width: 45%;
+        margin-right: 10rem;
+    }
+    .p-main{
+        padding-top: 2rem;
+    }
+    .btn-ajuda{
+        margin-top: 11rem;
+        margin-left: 12rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    .col-pet{
+        height: 8rem;
+        width: 7rem;
+    }
+    .main-box{
+        height: 615px;
+    }
+
+    h2{
+        margin-right: 5rem;
+    }
+    .pets-img{
+        display: flex;
+        flex-direction: column;
+    }
+    .col-pet{
+        height: 18rem;
+        width: 80%;
+        margin-top: 10px;
     }
 }
