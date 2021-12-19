@@ -2,6 +2,7 @@
 
 
 body{
+    background-image: url(imagens/background-adocao.png);
     background-color: white;
     display: flex;
     flex-wrap: wrap;
@@ -81,15 +82,62 @@ a{
 .dog-principal{
     height: 500px;
     width: 30%;
-    aspect-ratio: 1/2;
+}
+
+.disponiveis{
+    margin: 11% 10%;
+    text-align: center;
+    font-family:  'Anton', sans-serif;
+    font-size: 2rem;
+}
+.pets-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+.col-pet{
+    width: 18%;
+    height: 16rem;
+    border-radius: 60%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    box-shadow: 5px 5px 20px;
+    cursor: pointer;
+}
+
+span{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    width: 100%;
+    
+}
+.video{
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+    margin-left: 15rem;
+    width:  40%;
+}
+
+.text{
+    display: flex;
+    justify-content: flex-start;
+    font-family:  'Anton', sans-serif;
+    color: white;
+    text-align: left;
+    margin-right: 4rem;
+    font-size: 2rem;
+    width:  60%;
 }
 
 a:hover{
     color: black;
     transition: 1.8s;
 }
-h2{
-    display: none;
+.col-pet:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 @media (max-width: 1980px){
