@@ -113,12 +113,14 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 35rem;
 }
 .col-pet{
     width: 18%;
     height: 16rem;
     border-radius: 60%;
     margin-left: 5%;
+    margin-top: 2rem;
     margin-bottom: 5%;
     box-shadow: 5px 5px 20px;
     cursor: pointer;
